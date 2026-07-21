@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["resources", "rate"],
+  "properties": {
+    "resources": {
+      "type": "object",
+      "required": ["core", "search"],
+      "properties": {
+        "core": {
+          "type": "object",
+          "required": ["limit", "used", "remaining", "reset"],
+          "properties": {
+            "limit": {"type": "integer"},
+            "used": {"type": "integer"},
+            "remaining": {"type": "integer"},
+            "reset": {"type": "integer"}
+          }
+        },
+        "search": {
+          "type": "object",
+          "required": ["limit", "used", "remaining", "reset"],
+          "properties": {
+            "limit": {"type": "integer"},
+            "used": {"type": "integer"},
+            "remaining": {"type": "integer"},
+            "reset": {"type": "integer"}
+          }
+        }
+      }
+    },
+    "rate": {
+      "type": "object",
+      "required": ["limit", "used", "remaining", "reset"],
+      "properties": {
+        "limit": {"type": "integer"},
+        "used": {"type": "integer"},
+        "remaining": {"type": "integer"},
+        "reset": {"type": "integer"}
+      }
+    }
+  }
+}

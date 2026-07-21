@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="GitHub REST API Test Suite" verbose="1" parallel="none">
+
+    <test name="GitHub API Tests">
+        <classes>
+            <class name="com.alona.qa.tests.GitHubUserApiTest"/>
+            <class name="com.alona.qa.tests.RepositoryApiTest"/>
+            <class name="com.alona.qa.tests.RateLimitApiTest"/>
+            <class name="com.alona.qa.tests.ConditionalRequestTest"/>
+            <class name="com.alona.qa.tests.ErrorResponseTest"/>
+            <class name="com.alona.qa.tests.RetrofitComparisonTest"/>
+            <class name="com.alona.qa.tests.SearchApiTest"/>
+        </classes>
+    </test>
+
+</suite>

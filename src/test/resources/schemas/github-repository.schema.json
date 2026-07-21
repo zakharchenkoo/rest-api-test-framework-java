@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "required": ["id", "name", "full_name", "private", "owner", "html_url", "description", "fork", "url", "stargazers_count", "watchers_count", "forks_count", "open_issues_count", "default_branch"],
+  "properties": {
+    "id": {"type": "integer"},
+    "name": {"type": "string"},
+    "full_name": {"type": "string"},
+    "private": {"type": "boolean"},
+    "owner": {
+      "type": "object",
+      "required": ["login", "id", "type"],
+      "properties": {
+        "login": {"type": "string"},
+        "id": {"type": "integer"},
+        "type": {"type": "string"}
+      }
+    },
+    "html_url": {"type": "string"},
+    "description": {"type": ["string", "null"]},
+    "fork": {"type": "boolean"},
+    "url": {"type": "string"},
+    "stargazers_count": {"type": "integer"},
+    "watchers_count": {"type": "integer"},
+    "forks_count": {"type": "integer"},
+    "open_issues_count": {"type": "integer"},
+    "default_branch": {"type": "string"}
+  }
+}

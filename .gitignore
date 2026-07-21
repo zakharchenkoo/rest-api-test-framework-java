@@ -1,0 +1,11 @@
+target/
+.idea/
+*.iml
+*.log
+allure-results/
+allure-report/
+.DS_Store
+
+*.p12
+*.jks
+src/test/resources/certs/

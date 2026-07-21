@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "required": ["total_count", "incomplete_results", "items"],
+  "properties": {
+    "total_count": {"type": "integer"},
+    "incomplete_results": {"type": "boolean"},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "full_name", "owner", "html_url", "stargazers_count", "default_branch"],
+        "properties": {
+          "id": {"type": "integer"},
+          "name": {"type": "string"},
+          "full_name": {"type": "string"},
+          "owner": {"type": "object"},
+          "html_url": {"type": "string"},
+          "stargazers_count": {"type": "integer"},
+          "default_branch": {"type": "string"}
+        }
+      }
+    }
+  }
+}
