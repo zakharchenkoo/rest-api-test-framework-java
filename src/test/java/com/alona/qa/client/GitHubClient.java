@@ -62,17 +62,6 @@ public class GitHubClient {
                 .build());
     }
 
-    public Response searchRepositories(String query, String sort, String order, int perPage) {
-        return send(ApiRequest.builder()
-                .method(Method.GET)
-                .path("/search/repositories")
-                .queryParam("q", query)
-                .queryParam("sort", sort)
-                .queryParam("order", order)
-                .queryParam("per_page", perPage)
-                .build());
-    }
-
     public Response searchRepositories(String query, int page, int perPage) {
         return send(ApiRequest.builder()
                 .method(Method.GET)
